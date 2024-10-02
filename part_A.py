@@ -3,8 +3,9 @@ TECH2 mandatory assignment - Part A
 
 Write the implementation of part A of the exercise below.
 """
-
+x= [1,2,3,4,5]
 def std_loops(x):
+    
     mean_sum = 0
     count = 0
     
@@ -31,10 +32,9 @@ def std_loops(x):
     
 std_loops(x)
 
-
+x= [1,2,3,4,5]
 def std_builtin(x):
     import math
-    x= [1,2,3,4,5]
     sm=0
     for i in range(len(x)):
        sm+=x[i]
@@ -50,5 +50,7 @@ def std_builtin(x):
     
 std_builtin(x) 
  
- 
+import numpy as np
+arr= [1,2,3,4,5]
+print(np.std(arr, dtype = np.float64))
     
